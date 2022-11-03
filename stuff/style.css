@@ -1,0 +1,835 @@
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+/* navbar styling */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: hsla(212, 97%, 43%, 0.3) 0px 0px 0px 3px;
+}
+nav.sticky {
+  background: hwb(224 13% 65%);
+  padding: 13px 0;
+  box-shadow: none;
+}
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover {
+  color: #4070f4;
+}
+nav.sticky .menu a {
+  color: #fff;
+}
+nav.sticky .menu a:hover {
+  color: #0e2431;
+}
+.navbar .media-icons a {
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+}
+nav.sticky .media-icons a {
+  color: #fff;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn {
+  color: #4070f4;
+}
+nav.sticky .menu-btn {
+  color: #fff;
+}
+.navbar .menu .menu-btn {
+  color: #fff;
+}
+
+/* home section styling */
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 70px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+#first {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+#mypic {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-left: -100px;
+}
+#mypic > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 70%;
+  box-shadow: hsla(212, 97%, 43%, 0.3) 0px 0px 0px 3px;
+  animation: morph 8s ease-in-out 1s infinite;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+  background-color: black;
+  /* border: 1px solid red; */
+}
+.home .home-content {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one {
+  font-size: 25px;
+  color: white;
+}
+.home .text-two {
+  color: #0e2431;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #4070f4;
+}
+.home .button {
+  margin: 14px 0;
+}
+.home .button button:hover {
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+/* About Section Styling */
+section {
+  padding-top: 40px;
+}
+section .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+}
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span {
+  color: #0e2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left {
+  width: 45%;
+}
+.about .left img {
+  height: 400px;
+  width: 500px;
+  border-radius: 12px;
+}
+.about-details .right {
+  width: 55%;
+}
+section .topic {
+  color: #0e2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p {
+  text-align: justify;
+  color: #0e2431;
+  /* color: pink; */
+}
+.about-details .right button {
+  color: white;
+}
+
+section .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  background-color: black;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+section .button button a {
+  /* background: black; */
+  color: white;
+}
+section .button button:hover {
+  border-color: rgb(28, 28, 84);
+  background-color: rgb(28, 28, 84);
+  color: #4070f4;
+}
+#Resume_btn {
+  color: white;
+  background-color: #4070f4;
+  height: 60px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#Resume_btn:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+.ab {
+  font-size: 25px;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background-color: black;
+  padding: 7px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+#githubstats{
+width: 85%;
+margin: auto;
+}
+#github{
+  display: flex;
+ 
+  height: 200px;
+  margin: auto;
+  width: 60%;
+  gap: 90px;
+ margin-top: 20px;
+}
+.footer {
+  background-color:#0e2431;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 3.5rem 0;
+}
+.footer-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-social {
+  margin: bottom 2rem;;
+}
+.footer-icon {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+.services .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#linkss{
+  height: 50px;
+  margin-top: 20px;
+}
+#btns{
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(100, 100, 255);
+  color: white;
+  margin-left: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+#btns:hover{
+  background-color: white;
+  color: black;
+}
+.services .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  height: 500px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 30px 10px;
+  cursor: default;
+  transition: all 0.4s ease;
+  height: auto;
+}
+.services .boxes .box:hover{
+  background: #202f59;
+  color: #fff;
+  box-shadow: none;
+}
+.services .boxes .box .icon{
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.imgs{
+  width: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+.imgs:hover{
+  transform: scale(1.1);
+}
+.boxes .box:hover .icon{
+  background-color: #fff;
+  color: black
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #fff;
+}
+
+/* section title  */
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about .about-details {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+  .about-details .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+
+  .home {
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+    background-color: black;
+  }
+  .home .text-three {
+    font-size: 30px;
+    margin: 5px 0;
+    color: #4070f4;
+  }
+  .animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  #first {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+  #mypic {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    margin-top: 60px;
+  }
+  #mypic > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 70%;
+    box-shadow: hsla(212, 97%, 43%, 0.3) 0px 0px 0px 3px;
+    animation: morph 8s ease-in-out 1s infinite;
+  }
+  #skillsdiv{
+    display: flex;
+    flex-direction: column;
+   height: auto;
+    margin: auto;
+    /* border: 1px solid red; */
+  }
+  .frontend>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+  
+  }
+  .frontend{
+    height: auto;
+      margin: auto;
+  }
+  .backend{
+    margin: auto;
+    margin-top: 350px;
+    height: auto;
+    
+  }
+  .backend>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+  }
+  .skills-subtitle,.skills-subtitle-back{
+   text-align: center;
+    /* margin-left: 170px;
+   width: 200px */
+   
+  }
+  #githubtit{
+    margin-top: 850px;
+  }
+  #github{
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto;
+    height: auto;
+   width: 100%;
+  }
+  #github>div{
+  gap: 30px;
+    width: 100%;
+  }
+  .githubstats{
+    height: 100px;
+  }
+  .githubstats>img{
+  width: 100%;
+  }
+  .mostlanguage{
+    margin-top: 80px;
+  }
+  .mostlanguage>img{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .about .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 10px) and (max-width: 750px) {
+  nav .navbar {
+    width: 90%;
+  }
+  nav .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0e2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu {
+    left: 0;
+  }
+  nav .navbar .menu a {
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover {
+    color: #4070f4;
+  }
+  nav .navbar .media-icons {
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn {
+    display: block;
+  }
+  .home .text-two {
+    font-size: 65px;
+  }
+  .home .text-three {
+    font-size: 35px;
+  }
+  .home{
+    margin-top: 100px;
+    text-align:start;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+#skillsdiv{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.frontend>div{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+.frontend{
+  height: auto;
+  margin-left: 1px;
+  
+}
+.backend{
+  margin-top: 350px;
+  height: auto;
+  margin-left: 1px;
+}
+.backend>div{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+.skills-subtitle,.skills-subtitle-back{
+ margin-left: 80px;
+ width: 200px
+ 
+}
+#githubtit{
+  margin-top: 850px;
+}
+#github{
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+  height: auto;
+ width: 100%;
+}
+#github>div{
+
+  width: 100%;
+}
+.githubstats{
+  height: 100px;
+}
+.githubstats>img{
+width: 100%;
+}
+.mostlanguage{
+  margin-top: -50px;
+}
+.mostlanguage>img{
+  width: 100%;
+}
+
+
+
+}
+
+@media (max-width: 500px) {
+  .home .text-two {
+    font-size: 55px;
+  }
+  .home .text-three {
+    font-size: 33px;
+  }
+  .skills-details .boxes .per {
+    font-size: 50px;
+    color: #4070f4;
+  }
+  #first {
+    width: 100%;
+    background-color: black;
+  }
+
+  .ab {
+    font-size: 24px;
+    width: 300px;
+  }
+}
+.backendinside {
+  margin-top: 40px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.frontendinside {
+  margin-top: 40px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.skills-data {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #edf2f8;
+
+  /* background-color:rgb(182, 156, 183) */
+}
+.skills-data:hover {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.skills-data > img {
+  margin: auto;
+  margin-left: 23%;
+  margin-top: 10px;
+
+  height: 80px;
+  background-color: #edf2f8;
+}
+.skills-name {
+  text-align: center;
+  font-size: 20px;
+
+  font-weight: 500;
+  color: black;
+}
+#skillsdiv {
+  margin: auto;
+
+  width: 90%;
+
+  height: 500px;
+  display: flex;
+  gap: 50px;
+}
+
+#skillsdiv > div {
+  width: 50%;
+}
+.skills-subtitle {
+  text-align: center;
+}
+.skills-subtitle-back {
+  text-align: center;
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
