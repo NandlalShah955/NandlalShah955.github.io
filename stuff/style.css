@@ -594,7 +594,7 @@ margin: auto;
     width: 350px;
   }
 }
-
+/* fOR SMall screen media queries start here  */
 @media screen and (min-width: 10px) and (max-width: 750px) {
   nav .navbar {
     width: 90%;
@@ -638,7 +638,7 @@ margin: auto;
     font-size: 35px;
   }
   .home{
-    margin-top: 100px;
+    margin-top: 140px;
     text-align:start;
   }
   .services .boxes .box{
