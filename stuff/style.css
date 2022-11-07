@@ -309,14 +309,14 @@ section .button button:hover {
   border-radius: 10px;
 }
 #Resume_btn:hover {
-  color: black;
-  background-color: white;
+
+  background-color: teal;
 }
-/* #Resume_btn a:hover{
+#Resume_btn a:hover{
   color: black;
-} */
+}
 #Resume_btn a{
-  color: black;
+  color: white;
   }
 .ab {
   font-size: 25px;
