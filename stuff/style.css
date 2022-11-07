@@ -310,8 +310,14 @@ section .button button:hover {
 }
 #Resume_btn:hover {
   color: black;
-  background-color: #f1f1f1;
+  background-color: white;
 }
+/* #Resume_btn a:hover{
+  color: black;
+} */
+#Resume_btn a{
+  color: black;
+  }
 .ab {
   font-size: 25px;
 }
@@ -466,6 +472,7 @@ margin: auto;
 .benzo:hover{
   color: #033a80;
 }
+
 /* .bubbles img{
 width: 50px;
 animation: bubble 7s linear infinite;
