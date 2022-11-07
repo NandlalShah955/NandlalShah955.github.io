@@ -466,7 +466,7 @@ margin: auto;
 .benzo:hover{
   color: #033a80;
 }
-.bubbles img{
+/* .bubbles img{
 width: 50px;
 animation: bubble 7s linear infinite;
 }
@@ -475,7 +475,7 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-around;
-/* top: 100; */
+
 position: absolute; 
  bottom: -70px;
 
@@ -522,7 +522,7 @@ position: absolute;
 .bubbles img:nth-child(7){
   animation-delay: 7s;
   width: 30px;
-}
+} */
 
 /* section title  */
 
