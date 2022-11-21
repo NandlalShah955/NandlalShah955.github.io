@@ -11,7 +11,7 @@ window.onscroll = function() {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
-
+window.location.reload()
 }
 
 // Side NavIgation Menu JS Code
@@ -25,6 +25,7 @@ menuBtn.onclick = function(){
   menuBtn.style.pointerEvents = "none";
   body.style.overflow = "hidden";
   scrollBtn.style.pointerEvents = "none";
+  // window.location.reload()
 }
 cancelBtn.onclick = function(){
   navBar.classList.remove("active");
