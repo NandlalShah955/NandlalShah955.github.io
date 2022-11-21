@@ -11,7 +11,7 @@ window.onscroll = function() {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
-window.location.reload()
+// window.location.reload()
 }
 
 // Side NavIgation Menu JS Code
