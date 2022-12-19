@@ -340,6 +340,13 @@ width: 85%;
 margin: auto;
 
 }
+.githubstats >img{
+border: 1px solid rgb(237, 235, 235);
+height: 190px;
+}
+.mostlanguage>img{
+height: 190px;
+}
 #github{
   display: flex;
  
@@ -539,7 +546,7 @@ position: absolute;
     width: 85%;
   }
 }
-
+/* It is a medium screen styling it will also be applied to the small screen so remember to change in small media screen */
 @media (max-width: 1000px) {
   .about .about-details {
     justify-content: center;
@@ -675,16 +682,22 @@ position: absolute;
     width: 100%;
   }
   .githubstats{
-    height: 100px;
+    height: 270px;
+    /* border: 1px solid red; */
   }
   .githubstats>img{
   width: 100%;
+  height: 100%;
   }
   .mostlanguage{
-    margin-top: 80px;
+    margin-top: -20px;
+    height: 270px;
+    /* border: 1px solid red; */
   }
   .mostlanguage>img{
+    margin-top: -20px;
     width: 100%;
+    height: 100%;
   }
   
   #servicesh{
@@ -820,27 +833,23 @@ margin-top: 850px;
   display: flex;
   flex-direction: column;
 
-  margin: auto;
-  height: auto;
- width: 100%;
+ 
 }
 #github>div{
 
   width: 100%;
+  height: 50%;
 }
 .githubstats{
-  height: 100px;
- 
+ width: 100%;
+  
 }
-.githubstats>img{
-width: 100%;
-}
-.mostlanguage{
-  margin-top: -50px;
-}
+
 .mostlanguage>img{
-  width: 100%;
+margin-top: -60px;
+ width: 100%;
 }
+
 #githubstats{
   margin-top: -850px;
 }

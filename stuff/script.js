@@ -11,7 +11,7 @@ window.onscroll = function() {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
-// window.location.reload()
+
 }
 
 // Side NavIgation Menu JS Code
@@ -42,6 +42,7 @@ for (var i = 0; i < navLinks.length; i++) {
     navBar.classList.remove("active");
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
+    // window.location.reload()
   });
 }
 const sr = ScrollReveal({
